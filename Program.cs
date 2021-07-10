@@ -8,11 +8,16 @@ namespace LinkedList
         {
             Console.WriteLine("Welcome to Linked List Program");
             LinkedList linkedList = new LinkedList();
-            //Adding Elements to linked list
+            
             linkedList.InsertBeginning(56);
             linkedList.InsertBeginning(30);
             linkedList.InsertBeginning(70);
 
+            linkedList.InsertBeginning(40);
+            linkedList.InsertBeginning(80);
+
+            linkedList.Display();
+            linkedList.InsertMiddle(23, 4);
             linkedList.Display();
         }
     }

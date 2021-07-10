@@ -4,7 +4,7 @@ namespace LinkedList
     public class LinkedList
     {
         Node head;
-        public void InsertAtLast(int data)
+        public void AddLast(int data)
         {
             Node node = new Node(data);
             if (head == null)
@@ -22,7 +22,23 @@ namespace LinkedList
             }
 
         }
-        public void Display()
+
+        public void InsertBeginning(int val)
+        {
+            Node node = new Node(val);
+            if (head == null)
+            {
+                this.head = node;
+            }
+            else
+            {
+
+                node.next = this.head;
+                this.head = node;
+            }
+        }
+
+            public void Display()
         {
             Node temp = this.head;
             while (temp != null)

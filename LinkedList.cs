@@ -85,6 +85,31 @@ namespace LinkedList
             }
             temp.next = null;
         }
+        public void DeleteMiddle(int val)
+        {
+            if (this.head != null)
+            {
+                Node temp = this.head;
+                Node prev = null;
+                while (temp != null)
+                {
+                    if (temp.data == val)
+                    {
+                        Console.WriteLine($"\n{temp.data} Sucessfully Removed");
+                        prev.next = temp.next;
+                        break;
+                    }
+                    prev = temp;
+                    temp = temp.next;
+                }
+            }
+            else
+            {
+                Console.WriteLine("Element Not Found in Linked List");
+            }
+
+        }
+
         public void Search(int val)
         {
             int flag = 1;

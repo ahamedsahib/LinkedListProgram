@@ -54,7 +54,21 @@ namespace LinkedList
             prev.next = node;
             node.next = temp.next;
         }
-            public void Display()
+
+        public void DeleteBeginning()
+        {
+            if (this.head != null)
+            {
+                Console.WriteLine("\nAfter Deletion:");
+                this.head = this.head.next;
+            }
+            else
+            {
+                Console.WriteLine("No elements in the linked list");
+            }
+        }
+
+        public void Display()
         {
             Node temp = this.head;
             while (temp != null)
@@ -71,5 +85,6 @@ namespace LinkedList
                 temp = temp.next;
             }
         }
+
     }
 }

@@ -84,10 +84,25 @@ namespace LinkedList
                  temp = temp.next;
             }
             temp.next = null;
+        }
+        public void Search(int val)
+        {
+            int flag = 1;
+            Node temp = this.head;
+            while (temp != null)
+            {
+                if (temp.data == val)
+                {
+                    flag = 1;
+                    break;
+                }
+                temp = temp.next;
             }
+            Console.WriteLine((flag==1)?$"\n{val} found":$"{val}Not Found" );
+        }
 
 
-            public void Display()
+        public void Display()
         {
             Node temp = this.head;
             while (temp != null)

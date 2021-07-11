@@ -101,6 +101,25 @@ namespace LinkedList
             Console.WriteLine((flag==1)?$"\n{val} found":$"{val}Not Found" );
         }
 
+        public void SearchInsert(int val,int data)
+        {
+            Node temp = this.head;
+            Node prev = null;
+            Node node = new Node(val);
+            while (temp != null)
+            {
+                if (temp.data == data)
+                {
+                    prev = temp;
+                    temp = temp.next;
+                    break;
+                }
+                temp = temp.next;
+
+            }
+            prev.next = node;
+            node.next = temp;
+        }
 
         public void Display()
         {

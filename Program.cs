@@ -16,12 +16,13 @@ namespace LinkedList
             linkedList.InsertBeginning(80);
 
             linkedList.Display();
-            linkedList.InsertMiddle(23, 4);
+            //linkedList.InsertMiddle(23, 4);
 
             linkedList.Search(70);
-            
-            linkedList.DeleteBeginning();
-            linkedList.DeleteLast();
+
+            linkedList.SearchInsert(49, 40);
+            //linkedList.DeleteBeginning();
+            //linkedList.DeleteLast();
             linkedList.Display();
         }
     }

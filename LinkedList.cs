@@ -68,7 +68,26 @@ namespace LinkedList
             }
         }
 
-        public void Display()
+        public void DeleteLast()
+        {
+            if (this.head == null)
+            {
+                this.head = null;
+            }
+            if(head.next==null)
+            {
+                this.head = null;
+            }
+            Node temp = this.head;
+            while (temp.next.next != null)
+            {
+                 temp = temp.next;
+            }
+            temp.next = null;
+            }
+
+
+            public void Display()
         {
             Node temp = this.head;
             while (temp != null)

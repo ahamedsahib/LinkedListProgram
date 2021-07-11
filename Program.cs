@@ -26,6 +26,8 @@ namespace LinkedList
             linkedList.DeleteMiddle(49);
             //linkedList.DeleteBeginning();
             //linkedList.DeleteLast();
+            linkedList.Sort();
+            Console.WriteLine("Sorted List");
             linkedList.Display();
         }
     }

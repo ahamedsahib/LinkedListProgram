@@ -17,6 +17,8 @@ namespace LinkedList
 
             linkedList.Display();
             linkedList.InsertMiddle(23, 4);
+
+            linkedList.Search(70);
             
             linkedList.DeleteBeginning();
             linkedList.DeleteLast();
